@@ -24,7 +24,8 @@ class MyTripsPageBody extends React.Component {
       latLng: {},
       startDate: new Date(),
       endDate: new Date(),
-      itinerary: []
+      itinerary: [],
+      activeIndex: 0
     };
     this.updateSelection = this.updateSelection.bind(this);
     this.handleDeleteEvent = this.handleDeleteEvent.bind(this);
