@@ -61,7 +61,7 @@ class MyTripsPageBody extends React.Component {
       url: `/trips/${tripId}`,
       success: result => {
         var data = JSON.parse(result)
-        // console.log('trip details in MyTripsPageBody', data)
+        console.log('trip details in MyTripsPageBody', data)
         this.setState({
           eventsSelected: data.events,
           restaurantsSelected: data.restaurants,
@@ -82,6 +82,7 @@ class MyTripsPageBody extends React.Component {
         }
         // render trip location on map
         var latLng = JSON.parse(data.latLng);
+        console.log('latLng', latLng)
         // instantiate leaflet map
         this.mymap = L.map('map').setView([latLng.lat, latLng.lng], 13);
         // add tile layer
