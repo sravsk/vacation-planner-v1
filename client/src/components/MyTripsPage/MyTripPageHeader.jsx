@@ -140,7 +140,7 @@ class MyTripPageHeader extends React.Component{
                       key={trip.id}
                       >
                       {/*{trip.tripName} Trip details*/}
-                      <span>{trip.itinerary.length days in {trip.tripName}</span>
+                      <span>{`${JSON.parse(trip.itinerary).length} days in ${trip.tripName}`}</span>
                       </Grid.Column>
                       <Grid.Column width={3}>
                       <Modal
