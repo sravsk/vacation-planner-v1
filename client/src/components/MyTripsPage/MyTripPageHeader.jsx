@@ -140,7 +140,7 @@ class MyTripPageHeader extends React.Component{
                       key={trip.id}
                       >
                       {/*{trip.tripName} Trip details*/}
-                      <span>{moment(trip.end_date).diff(trip.start_date, 'days')} days in {trip.tripName}</span>
+                      <span>{trip.itinerary.length days in {trip.tripName}</span>
                       </Grid.Column>
                       <Grid.Column width={3}>
                       <Modal
