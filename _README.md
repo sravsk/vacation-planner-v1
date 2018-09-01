@@ -1,6 +1,6 @@
 # Project Name
 
-> Pithy project description
+> Vacation Planner with Widget deployed
 
 ## Team
 
