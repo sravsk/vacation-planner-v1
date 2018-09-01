@@ -7,7 +7,9 @@
     "start": "webpack & node server/index.js",
     "dev:react": "webpack -d --watch",
     "dev:start": "nodemon server/index.js",
-    "heroku-postbuild": "webpack"
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./build/index.bundle.js",
+    "compile": "NODE_ENV=production webpack --config ./webpack.config.js --progress",
   },
   "repository": {
     "type": "git",
